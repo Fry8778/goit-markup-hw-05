@@ -3,7 +3,7 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primery-white-color: #FFFFFF;
-    --transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -19,13 +19,7 @@ body {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
 }
@@ -488,6 +482,7 @@ button[data-modal-close] {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -499,13 +494,13 @@ button[data-modal-close] {
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    transition: fill var(--transition);
+    transition: background var(--transition);
 }
 
 .icon {
     fill: #AFB1B8;
     transition: fill var(--transition);
-    transition: background-color var(--transition);
+    
 }
 
 .social-link:hover .icon,
@@ -522,9 +517,10 @@ button[data-modal-close] {
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--accent-color);
+    background: var(--accent-color);
 
 }
+
 
 .social-item:not(:last-child) {
     margin-right: 10px;
@@ -580,6 +576,7 @@ button[data-modal-close] {
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
 }
 
 /*Constant clients*/
@@ -609,10 +606,8 @@ button[data-modal-close] {
 
 .promo {
     fill: #AFB1B8;
-
+    transition: fill var(--transition);
 }
-
-
 
 .part-style {
     display: flex;
@@ -625,7 +620,7 @@ button[data-modal-close] {
     border-radius: 4px;
     border: 1px solid #AFB1B8;
     background-color: var(--primery-white-color);
-    transition: fill var(--transition);
+    transition: background var(--transition);
     transition: border-color var(--transition);
 }
 
